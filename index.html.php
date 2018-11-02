@@ -1,5 +1,6 @@
 <?php
-
+include("./php/connectdb.php");
+    
 $categorie_id = 1;
 
 if(isset($_GET['categorie_id']) && !empty($_GET['categorie_id'])){
@@ -9,8 +10,6 @@ if(isset($_GET['categorie_id']) && !empty($_GET['categorie_id'])){
 if(isset($_GET['stock_item_id']) && !empty($_GET['stock_item_id'])){
     $stock_item_id = filter_input(INPUT_GET, 'stock_item_id', FILTER_VALIDATE_INT);
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
