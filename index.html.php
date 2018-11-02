@@ -144,5 +144,4 @@ if(isset($_GET['stock_item_id']) && !empty($_GET['stock_item_id'])){
         }
     }
 </script>
-
 </html>
