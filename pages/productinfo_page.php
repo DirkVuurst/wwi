@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include '../php/connectdb.php';
 include '../php/utils.php';
 include '../php/php_session.php';
@@ -154,10 +154,10 @@ function getStockItemCountInArchive($id)
         <div class="product-stock">Beschikbaar: <?php echo $itemsAvailible ?> </div>
         <hr>
         <div class="btn-group cart">
-            <button type="button" class="btn btn-success">
-                Toevoegen aan winkelwagen
-                <!-- Hier moet de StockItemID worden toegevoegd aan de $_SESSION["product_id"] array voor het winkelmandje-->
-            </button>
+            <form method="POST" action="./php/php_session.php?id=<?php echo $id; ?>">
+                <input type="submit" value="Toevoegen aan de winkelmand" class="btn btn-success">
+                </input>
+            </form>
         </div>
     </div>
     <div class="container-fluid">
