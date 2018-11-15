@@ -14,7 +14,7 @@
         </div>
         <div class="card-body">
             <!-- PRODUCT AND COST-->
-            <?php include '../php/shopping-cart.php'; ?>
+            <?php include '../php/shopping_cart.php'; ?>
         </div>
     </div>
 </div>
