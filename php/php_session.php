@@ -30,7 +30,14 @@
     {
         $add_id = preg_replace('#[^0-9]#i', '',$_GET['add_id']);
         $amount = preg_replace('#[^0-9]#i', '',$_GET['amount']);
-        $_SESSION["shopping_cart"][$add_id] = $amount; 
+        if ($amount <= 0)
+        {
+            unset($_SESSION["shopping_cart"][$add_id]);
+        }
+        else
+        {
+            $_SESSION["shopping_cart"][$add_id] = $amount; 
+        }
         header("Location: ../pages/shopping_cart.html.php");
     } 
 ?>
