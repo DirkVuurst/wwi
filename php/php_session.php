@@ -11,9 +11,8 @@
         }
         else
         {
-            $_SESSION["shopping_cart"][$id] += 1;
-        }
-        
+            $_SESSION["shopping_cart"][$id] = 1;
+        }     
         header("Location: ../pages/shopping_cart.html.php");
     } 
     
@@ -21,8 +20,17 @@
     if(isset($_GET['delete_id']))
     {
         $delete_id = preg_replace('#[^0-9]#i', '',$_GET['delete_id']);
-        $shopping_cart_item[$delete_id] = 1;
+        //$shopping_cart_item[$delete_id] = 1;
         unset($_SESSION["shopping_cart"][$delete_id]); 
+        header("Location: ../pages/shopping_cart.html.php");
+    }
+
+    // Check if count exists if so, add addition items to shopping cart
+    if (isset($_GET['add_id']) && isset($_GET['amount']))
+    {
+        $add_id = preg_replace('#[^0-9]#i', '',$_GET['add_id']);
+        $amount = preg_replace('#[^0-9]#i', '',$_GET['amount']);
+        $_SESSION["shopping_cart"][$add_id] = $amount; 
         header("Location: ../pages/shopping_cart.html.php");
     } 
 ?>

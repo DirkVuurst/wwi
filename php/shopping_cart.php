@@ -48,10 +48,14 @@
                                 </div>
                                 <div class="col-4 col-sm-4 col-md-4">
                                     <div class="quantity">
-                                        <button type="button" value="+"class="btn btn-success pull-right" style="width:35px">+</button>
-                                        <input type="number" step="1" max="99" min="1" value="<?php echo $value; ?>" title="Qty" class="qty"
-                                               size="4">
-                                        <input type="button" value="-" class="btn btn-success pull-right" style="width:35px"></input>
+                                        <form method="POST" action="../php/php_session.php?add_id=<?php echo $index; ?>&amount=<?php echo $value+1; ?>">
+                                            <button type="submit" class="btn btn-outline-danger btn-xs" style="width:35px">+</button>
+                                        </form> 
+                                            <input type="number" step="1" max="99" min="1" value="<?php echo $value; ?>" title="Qty" class="qty" size="4">
+                                        <form method="POST" action="../php/php_session.php?add_id=<?php echo $index; ?>&amount=<?php echo $value-1; ?>">
+                                            <button type="submit" class="btn btn-outline-danger btn-xs" style="width:35px">-</button>
+                                        </form>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-2 col-sm-2 col-md-2 text-right">
