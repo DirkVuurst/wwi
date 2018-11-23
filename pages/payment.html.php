@@ -1,4 +1,3 @@
 <?php
 $cost = $_GET['cost'];
-print ("Je moet " . $cost . " betalen");
-?>
+print ("Je moet " . number_format($cost, 2, '.', '') . " betalen");
