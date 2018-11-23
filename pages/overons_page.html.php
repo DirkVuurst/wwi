@@ -110,19 +110,19 @@ function getReviews(){
             </ul>
             <form method="POST" action="../php/bedrijf_review_handler.php"">
                 <label for="review">Schrijf een korte review over Wide World Importers</label>
-                <textarea class="form-control animated" cols="65" id="review" name="review" placeholder="Type hier u review..." rows="4"></textarea>
+                <textarea class="form-control animated" cols="65" id="review" name="review" placeholder="Type hier u review..." rows="4" required></textarea>
                 <!-- Cijfer-->
                 <div class="form-group" id="cijfer">
-                    <label for="Cijfer">Geeft een cijfer aan het product</label>
+                    <label></label>
                     <select class="form-control" id="cijfer" name="cijfer" required>
-                        <option value="">Geef een cijfer</option>
+                        <option value="">Geef het aantal sterren</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <div class="invalid-feedback">Example invalid custom select feedback</div>
+                    <div class="invalid-feedback"></div>
                 </div>
                 <!--Submit knop-->
                 <button class="btn btn-success mb-2" type="submit" name="versturen" id="versturen">Versturen</button>

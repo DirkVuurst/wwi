@@ -190,7 +190,7 @@ function getStockItemCountInArchive($id)
                     <textarea class="form-control animated" cols="65" id="review" name="review" placeholder="Type hier u review..." rows="4"></textarea>
                     <!-- Review starts -->
                     <div class="form-group" id="cijfer">
-                        <label for="Cijfer">Geeft het aantal sterren op</label>
+                        <label></label>
                         <select class="form-control" id="cijfer" name="cijfer" required>
                             <option value="">Geef het aantal sterren op</option>
                             <option value="1">1</option>
