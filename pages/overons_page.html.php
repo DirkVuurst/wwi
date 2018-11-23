@@ -35,6 +35,10 @@ function getReviews(){
 
     <title>Wide World Importers</title>
 
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -83,7 +87,28 @@ function getReviews(){
                     <p class="about-paddingB">Wij zijn WWI. We zijn trots op onze producten en geloven in kwaliteit. In ieder huis vindt een
                     product van WWI zijn thuis. Ondanks onze grootte zien klanten ons als kleinschalig en
                     betrokken. Persoonlijk klantcontact staat bij ons hoog in het vaandel</p>
-                    <img class="d-block img-fluid rounded mx-auto" src="../images/pand.png"/><br>    
+                    <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="../images/Kim_Helmink.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="../images/pand.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div><br>  
                 </div>      
             </div>
             <div class="col-sm" style="style=margin-top: 35px">
@@ -180,8 +205,8 @@ function getReviews(){
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="./vendor/jquery/jquery.min.js"></script>
-<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
