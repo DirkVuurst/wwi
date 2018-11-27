@@ -80,6 +80,7 @@ if(isset($_GET['stock_item_id']) && !empty($_GET['stock_item_id'])){
                 </li>
             </ul>
         </div>
+        <a class="navbar-brand" href="pages/shopping_cart.html.php"><img class="img-responsive" width="44" height="35" src="images/shopping_cart.png"/></a>
     </div>
 </nav>
 
