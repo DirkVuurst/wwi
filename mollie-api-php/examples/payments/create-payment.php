@@ -1,6 +1,7 @@
 <?php
 
 namespace _PhpScoper5be2fdb7243e7;
+$cost = $cost = $_GET['cost'];
 
 /*
  * How to prepare a new payment with the Mollie API.
@@ -22,7 +23,6 @@ try {
      */
     $protocol = isset($_SERVER['HTTPS']) && \strcasecmp('off', $_SERVER['HTTPS']) !== 0 ? "https" : "http";
     $hostname = $_SERVER['HTTP_HOST'];
-    $path = \dirname(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $_SERVER['PHP_SELF']);
     /*
      * Payment parameters:
      *   amount        Amount in EUROs. This example creates a € 10,- payment.
@@ -31,7 +31,15 @@ try {
      *   webhookUrl    Webhook location, used to report when the payment changes state.
      *   metadata      Custom metadata that is stored with the payment.
      */
-    $payment = $mollie->payments->create(["amount" => ["currency" => "EUR", "value" => "10.00"], "description" => "Order #{$orderId}", "redirectUrl" => "{$protocol}://{$hostname}{$path}/payments/return.php?order_id={$orderId}", "webhookUrl" => "{$protocol}://{$hostname}{$path}/payments/webhook.php", "metadata" => ["order_id" => $orderId]]);
+    $payment = $mollie->payments->create(
+            ["amount" => 
+                ["currency" => "EUR", 
+                    "value" => "$cost"], 
+                "method" => \Mollie\Api\Types\PaymentMethod::IDEAL,
+                "description" => "Order #{$orderId}", 
+                "redirectUrl" => "{$protocol}://{$hostname}/wwi/mollie-api-php/examples/payments/return.php?order_id={$orderId}", 
+                "webhookUrl" => "https://www.example.org/payment/completed", 
+                "metadata" => ["order_id" => $orderId]]);
     /*
      * In this example we store the order with its payment status in a database.
      */

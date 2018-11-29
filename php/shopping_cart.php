@@ -96,7 +96,7 @@
         Totale btw kosten: <b> &#8364; <?php echo number_format($total_cost_btw, 2); ?></b> <br>
         Verzendkosten: <b> &#8364; <?php echo number_format($send_cost, 2); ?></b> <br>
         <br> Totaal: <b> &#8364; <?php echo number_format($total_cost, 2); ?></b>
-        <form method="POST" action="../pages/payment.html.php?cost=<?php echo number_format($total_cost, 2); ?>">  
+        <form method="POST" action="../mollie-api-php/examples/payments/create-payment.php?cost=<?php echo number_format($total_cost, 2); ?>">  
             <?php
                 if ($total_cost > 0)
                 {
