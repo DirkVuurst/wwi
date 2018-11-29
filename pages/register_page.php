@@ -28,7 +28,8 @@ if (!filter_input(INPUT_GET, "error_message", FILTER_SANITIZE_STRING)) {
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Admin</title>
+    <title>Registreer</title>
+    <link rel="shortcut icon" href="../images/title.png" />
 </head>
 <body>
 <div class="container">

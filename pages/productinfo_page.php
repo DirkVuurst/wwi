@@ -116,17 +116,13 @@ function getStockItemCountInArchive($id)
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-            <img class="d-block img-fluid" src="./images/nomollie.jpg" alt="Second slide">
+            <img class="d-block img-fluid" src="./images/test2.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
             <img class="d-block img-fluid" src="./images/test1.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block img-fluid" src="./images/meermemes.jpg" alt="Third slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

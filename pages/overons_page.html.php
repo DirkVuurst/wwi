@@ -34,6 +34,7 @@ function getReviews(){
     <meta name="author" content="">
 
     <title>Wide World Importers</title>
+    <link rel="shortcut icon" href="../images/title.png" />
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
