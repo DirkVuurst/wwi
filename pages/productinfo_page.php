@@ -109,6 +109,7 @@ function getStockItemCountInArchive($id)
         return $itemsAvailible;
     }
 }
+
 ?>
 <!-- product information --->
 <div class="row" style="margin-top: 100px">
