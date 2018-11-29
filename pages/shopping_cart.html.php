@@ -15,11 +15,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../index.html.php">
-                        Home
-                        <span class="sr-only">(current)</span>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Account</a>
@@ -32,7 +29,7 @@
                 </li>
             </ul>
         </div>
-        <a class="navbar-brand" href="shopping_cart.html.php"><img class="img-responsive" width="44" height="35" src="../images/shopping_cart.png"/></a>
+        <a class="navbar-brand" href="shopping_cart.html.php"><img class="img-responsive" width="44" height="35" src="../images/shopping_cart_active.png"/></a>
     </div>
 </nav>
 
