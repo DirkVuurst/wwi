@@ -8,8 +8,6 @@
     {    
         // Haalt de gekochte items uit de voorrraad
         $query = "UPDATE stockitemholdings SET QuantityonHand = QuantityonHand -$aantal WHERE StockItemID = $id";
-        echo $query;
-
         $pro = $conn->prepare($query);
         $pro->execute();
         
