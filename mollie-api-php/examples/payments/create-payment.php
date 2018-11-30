@@ -37,8 +37,8 @@ try {
                     "value" => "$cost"], 
                 "method" => \Mollie\Api\Types\PaymentMethod::IDEAL,
                 "description" => "Order #{$orderId}", 
-                "redirectUrl" => "{$protocol}://{$hostname}/wwi/mollie-api-php/examples/payments/return.php?order_id={$orderId}", 
-                "webhookUrl" => "https://www.example.org/payment/completed", 
+                "redirectUrl" => "{$protocol}://{$hostname}/wwi/pages/confirmation.html.php", 
+                "webhookUrl" => "", 
                 "metadata" => ["order_id" => $orderId]]);
     /*
      * In this example we store the order with its payment status in a database.

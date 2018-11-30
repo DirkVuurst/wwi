@@ -86,6 +86,7 @@
         {
             $send_cost = 0.00;
         }
+        $total_cost += $send_cost;
     ?>
 </div>
 <!-- The price and checkout -->

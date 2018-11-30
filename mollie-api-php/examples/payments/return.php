@@ -18,3 +18,5 @@ if (isset($_GET["order_id"])) {
 } else {
     $status = "No order number defined";
 }
+echo 'Je hebt betaald!';
+header("Location: ../../../index.html.php");
