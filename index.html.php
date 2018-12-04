@@ -84,7 +84,7 @@ if (isset($_POST['search']) && !empty($_POST['search'])) {
                 </li>
 
                 <li id="shopping-cart-icon" class="nav-item active ">
-                    <i class="blackiconcolor fa fa-shopping-cart fa-2x"></i>
+                    <a href="./pages/shopping_cart.html.php"> <i class="blackiconcolor fa fa-shopping-cart fa-2x"></i> </a>
                 </li>
             </ul>
         </div>
