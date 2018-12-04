@@ -57,7 +57,7 @@ $send_cost_threshold = 20.00;
                                 </form>
                                 <form><h6><strong>Aantal: </strong><?php echo $value; ?></h6></form>
                                 <form method="POST"
-                                      action="../php/shopping_cart/php_session.php?delete_id=<?php echo $index; ?>&amount=<?php echo $value - 1; ?>">
+                                      action="../php/shopping_cart/php_session.php?add_id=<?php echo $index; ?>&amount=<?php echo $value - 1; ?>">
                                     <button type="submit" class="btn btn-outline-danger btn-xs" style="width:35px">-
                                     </button>
                                 </form>
