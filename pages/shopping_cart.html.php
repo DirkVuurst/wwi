@@ -28,7 +28,7 @@ $send_cost_threshold = 20.00;
 
 <body>
 
-<div w3-include-html="../includes/nav_bar.html.php"></div>
+<div w3-include-html="../includes/nav_bar.html.php?current=shopping_cart"></div>
 
 <div style="margin-top: 50px" class="container">
     <div class="row">

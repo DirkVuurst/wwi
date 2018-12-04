@@ -41,7 +41,7 @@ function getReviews()
 
 <body>
 
-<div w3-include-html="../includes/nav_bar.html.php"></div>
+<div w3-include-html="../includes/nav_bar.html.php?current=over_ons"></div>
 
 <div style="margin-top: 50px">
     <div class="container">
